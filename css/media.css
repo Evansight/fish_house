@@ -1,0 +1,28 @@
+@media (max-width:1024px){
+	.header__logo {
+		width: 20%;
+	}
+	.header__logo-text {
+		font-size: 1rem;
+		left: 32px;
+		top: 37px;
+	}
+	.header__logo-text {
+		font-size: .5rem;
+	}
+
+}
+
+@media (max-width:768px){
+	.nav__btn {
+		display: block;
+	}
+	.header__nav {
+		display: none;
+	}
+	.header__nav.show {
+		display: block;
+	}
+}
+
+

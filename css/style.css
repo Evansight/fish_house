@@ -53,6 +53,10 @@ body {
    flex-basis: 80%;
 }
 
+.nav__btn {
+   display: none;
+}
+
 .header__booking {
    display: inline-block;
    text-transform: uppercase;
@@ -196,7 +200,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding-right: 150px;
+   /* padding-right: 150px; */
 }
 
 .introduction__contact{
@@ -228,24 +232,32 @@ body {
 .introducrion__menu {
    position: relative;
    z-index: 0;
-
-
-}
-.introduction__menu-pic {
-  
    width: calc(100% / 3);
 
 }
 
 
-.introduction__menu-text{
-   position: absolute;
+.introduction__menu-text {
    text-align: center;
-   z-index: 2;
+   z-index: 1000;
    font-family: 'Quicksand', sans-serif;
    color: ivory;
    font-size: 24px;
    letter-spacing: .2em;
+}
+
+.is-Transformed { 
+	width: 50%;
+	margin: auto;
+	position: absolute;
+	top: 50%; left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+}
+
+.introduction__menu-pic {
+   width: 100%;
 }
 
 
@@ -318,12 +330,60 @@ body {
 }
 .dish__pick {
    display: block;
-   width: calc(100% / 2);
+   width: 100%;
 }
-.dish__big {
+.dish__large {
    display: block;
-   width: calc(100% / 2);
+   width: 50%;
 }
+
+.dish__pick-wrapper {
+   width: 50%;
+   position: relative;
+   
+}
+
+.dish__order {
+   width: 65%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: -1;
+   background-color: rgb(255, 249, 249);
+   padding: 20px;
+   transition: all .5s;
+   opacity: 0;
+}
+
+.dish__pick-wrapper:hover .dish__order {
+   opacity: 1;
+   z-index: 1;
+}
+
+
+.dish__order__title {
+   color: #383838;
+   font-family: 'Crimson Text', serif;
+   font-weight: 500;
+   font-size: 14px;
+   
+  
+}
+.dish__order-name {
+   color: #1f1f1f;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+ 
+}
+
+.dish__order-prise {
+   color: #ed4848;
+   font-family: 'Crimson Text', serif;
+   
+}
+
+
 
 /* P r o m i s */
 
@@ -397,10 +457,8 @@ body {
 }
 
 .motivation__description {
-   padding: 183px 0;
-   margin: 0px 114px;
+   padding: 14rem 6rem;
    width: 50%;
-   
 
 }
 
@@ -463,6 +521,7 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+   background-size: 10rem;
    border-radius: 50%;
    margin: 24px auto;
 }
@@ -518,6 +577,11 @@ body {
    justify-content: flex-end;
    text-align: right;
    text-transform: uppercase;
+}
+
+.booking__form input {
+   outline: none;
+   
 }
 
 form input {

@@ -9,8 +9,9 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans&family=Quicksand:wght@700&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 						<p class="header__logo-text">fish house</p>
 						<p class="header__logo-text header__logo-motto">seafood restaurant</p>
 					</a>
-					<nav class="header__nav">
+					<nav id="main__menu" class="header__nav">
 						<ul class="header__nav-list">
 							<li class="header__nav-list-item">
 								<a class="header__nav-link" href="#">OUR MENU</a>
@@ -46,6 +47,7 @@
 							</li>
 						</ul>
 					</nav>
+					<button class="nav__btn" type="button" onclick="document.getElementById('main__menu').classList.toggle('show')">Menu</button>
 				</div>
 			</div>
 			<div class=".header__title-wrapper">
@@ -118,19 +120,20 @@
 
 		</div>
 		<div class="introducrion__menu-inner">
-			<div class="div">
-			<img class="introduction__menu-pic" src="images/pic-1.png" alt="">
-			<p class="introduction__menu-text">Daily Catch</p>
+			<div class="introducrion__menu">
+				<img class="introduction__menu-pic" src="images/pic-1.png" alt="">
+				<p class=" introduction__menu-text is-Transformed">Daily Catch</p>
+			</div>
+			<div class="introducrion__menu">
+				<img class="introduction__menu-pic" src="images/pic-2.png" alt="">
+				<p class="introduction__menu-text is-Transformed">Fresh Seafood</p>
+			</div>
+			<div class="introducrion__menu">
+				<img class="introduction__menu-pic" src="images/pic-3.png" alt="">
+				<p class="introduction__menu-text is-Transformed">Best Wines</p>
+			</div>
 		</div>
-		<div class="div">
-			<img class="introduction__menu-pic" src="images/pic-2.png" alt="">
-			<p class="introduction__menu-text">Fresh Seafood</p>
-		</div>
-		<div class="div">
-			<img class="introduction__menu-pic" src="images/pic-3.png" alt="">
-			<p class="introduction__menu-text">Best Wines</p>
-		</div>
-		</div>
+
 	</section>
 
 
@@ -172,14 +175,42 @@
 	<section class="dish">
 		<div class="dish__wrapper">
 			<div class="dish__inner">
-				<img class="dish__pick" src="images/dish-1.png" alt="">
-				<img class="dish__pick" src="images/dish-2.png" alt="">
-				<img class="dish__pick" src="images/dish-3.png" alt="">
-				<img class="dish__pick" src="images/dish-4.png" alt="">
+				<div class="dish__pick-wrapper">
+					<img class="dish__pick" src="images/dish-1.png" alt="">
+					<div class="dish__order is-Transformed">
+						<h4 class="dish__order__title">Daily Catch</h4>
+						<p class="dish__order-name">Fish Cebab with Vegetables</p>
+						<p class="dish__order-prise">$26</p>
+					</div>
+				</div>
+				<div class="dish__pick-wrapper">
+					<img class="dish__pick" src="images/dish-2.png" alt="">
+					<div class="dish__order is-Transformed">
+						<h4 class="dish__order__title">Daily Catch</h4>
+						<p class="dish__order-name">Fish Cebab with Vegetables</p>
+						<p class="dish__order-prise">$26</p>
+					</div>
+				</div>
+				<div class="dish__pick-wrapper">
+					<img class="dish__pick" src="images/dish-3.png" alt="">
+					<div class="dish__order is-Transformed">
+						<h4 class="dish__order__title">Daily Catch</h4>
+						<p class="dish__order-name">Fish Cebab with Vegetables</p>
+						<p class="dish__order-prise">$26</p>
+					</div>
+				</div>
+				<div class="dish__pick-wrapper">
+					<img class="dish__pick" src="images/dish-4.png" alt="">
+					<div class="dish__order is-Transformed">
+						<h4 class="dish__order__title">Daily Catch</h4>
+						<p class="dish__order-name">Fish Cebab with Vegetables</p>
+						<p class="dish__order-prise">$26</p>
+					</div>
+				</div>
 			</div>
-			
-				<img class="dish__big" src="images/big-dish.png" alt="">
-	
+
+			<img class="dish__large" src="images/big-dish.png" alt="">
+
 
 		</div>
 		<div class="dish__button-wraper">
@@ -280,7 +311,7 @@
 
 					<div>
 						<span>When?</span>
-						<input type="date" name="date" placeholder="Today">
+						<input class="form__date" type="date" name="date" placeholder="Today">
 					</div>
 					<div>
 						<span>Table for</span>
@@ -355,7 +386,7 @@
 					<div class="footer__inst"></div>
 				</a>
 			</div>
-			<span class="footer__copyright">Ancora © 2016 All Rights Reserved Terms of Use and Privacy Policy</span>
+			<span class="footer__copyright">Ardoredex © 2016 All Rights Reserved Terms of Use and Privacy Policy</span>
 		</div>
 
 	</footer>
