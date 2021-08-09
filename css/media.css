@@ -1,20 +1,90 @@
-@media (max-width:1024px){
-	.header__logo {
-		width: 20%;
+@media (max-width:1400px) {
+	.introduction__bagel {
+		display: none;
 	}
-	.header__logo-text {
-		font-size: 1rem;
-		left: 32px;
-		top: 37px;
+	.inner__wrapper {
+		width: 100%;
 	}
-	.header__logo-text {
-		font-size: .5rem;
+	.introduction__title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.introduction__info {
+		justify-content: space-around;
+	}
+}
+
+
+@media (max-width:1200px) {
+.header__logo-link {
+      flex-basis: 22.5%;
+   }
+
+	.new__inner {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.promise__wrapper {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	.motivation {
+		height: auto;
+	}
+
+	.promise__item {
+	
+	}
+	.motivation__wrapper {
+	
 	}
 
 }
 
-@media (max-width:768px){
-	.nav__btn {
+@media (max-width:1024px) {
+   .header__logo-link {
+      flex-basis: 24%;
+   }
+
+   .header__logo-text {
+      font-size: 1.1rem;
+   }
+
+   .header__logo-motto {
+      font-size: 0.5rem;
+   }
+
+   .header__nav-list {
+      font-size: .9rem;
+   }
+
+   .header__logo {
+      width: 2.5rem;
+   }
+
+   .header__booking {
+      font-size: .6rem;
+		padding: .8rem;
+   }
+
+   .header__title-wrapper .header__title {
+      font-size: 1.9rem;
+   }
+
+   .header__subtitle {
+      font-size: 1rem;
+   }
+
+}
+
+
+@media (max-width:840px) {
+   .nav__btn {
 		display: block;
 	}
 	.header__nav {
@@ -23,6 +93,64 @@
 	.header__nav.show {
 		display: block;
 	}
+	.header__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	.header__booking {
+		font-size: .5rem;
+		padding: .7rem;
+	}
+	.dish__wrapper {
+		flex-wrap: wrap;
+	}
+	.dish__large {
+		width: 100%;
+	}
+ 
 }
 
+@media (max-width:768px) {
+	.new__inner{
+		flex-direction: column;
+		
+	} 
+	.new__item + .new__item {
+		padding-top: 1rem;
+	}
 
+	.promise__wrapper {
+		flex-direction: column;
+	}
+
+	.promise__item + .promise__item {
+		padding-top: 1rem;
+	}
+	.promise__item {
+		width: 45%;
+	}
+	.motivation__description {
+		padding: 5rem 4rem;
+	}
+	.motivation__title {
+		font-size: 36px;
+		margin-bottom: 35px;
+  }
+}
+
+@media (max-width:480px) {
+	.motivation__top{
+		flex-direction: column;
+	}
+	.motivation__bottom{
+		flex-direction: column-reverse;
+	}
+	.motivation__pic, 
+	.motivation__description,
+	.motivation__img {
+		width: 100%;
+	}
+	.motivation__pic, .motivation__img {
+		height: 17rem;
+	}
+}

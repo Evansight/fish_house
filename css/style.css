@@ -32,10 +32,10 @@ body {
 }
 
 .header__section {
-   padding: 30px 70px;
+   padding: 20px 69px 24px;
    background-color: rgba(0, 0, 0, .4);
    position: relative;
-	margin-bottom: 350px;
+   margin-bottom: 350px;
 }
 
 .header__inner {
@@ -72,17 +72,35 @@ body {
 }
 
 .header__logo-text {
-   text-decoration: none;
-   text-transform: uppercase;
-   color: #fff;
-   font-size: 22px;
-   position: absolute;
-   top: 34px;
-   right: 32px;
-}
 
+text-decoration: none;
+
+text-transform: uppercase;
+
+color: #fff;
+
+font-size: 22px;
+
+margin-top: 1.7rem;
+
+letter-spacing: 1px;
+
+
+}
+.header__logo-link {
+   display: flex;
+   align-items: center;
+   padding-left: 0.2rem;
+   padding-bottom: 0rem;
+}
 .header__logo-text+.header__logo-text {
    margin: 26px 14px;
+}
+.header__logo {
+   width: 47px;
+   height: auto;
+   padding-left: 0px;
+ 
 }
 
 .header__logo-motto {
@@ -118,7 +136,12 @@ body {
 .header__title-wrapper {
 	display: flex;
 	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+	align-items: center;
 }
+
+.header__title-wrapper {}
 
 .header__title, .header__subtitle {
 	text-transform: uppercase;
@@ -402,11 +425,12 @@ body {
    display: flex;
    justify-content: space-between;
    margin-bottom: 165px;
-   width: 1131px;
+   width: 100%;
 }
 
 .promise__item {
-   max-width: 327px;  
+   width: 35%; 
+   padding: 1.3rem; 
 }
 
 .promise__cook {
