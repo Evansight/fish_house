@@ -23,7 +23,7 @@
                     <a href="#" class="header__logo-link">
                         <img class="header__logo" src="images/fish.png" alt="">
                         <div class="header__logo-text">
-                            <p>fish house</p>
+                            <div>fish house</div>
                             <span class="header__logo-motto">seafood restaurant</span>
                         </div>
                     </a>
@@ -70,7 +70,7 @@
             <div class="intro__title">
                 <div class="introduction__bagel"></div>
                 <div class="inner__wrapper">
-                    <h3 class="introduction__title">hello and welcome</h3>
+                    <h3 class="introduction__title title">hello and welcome</h3>
 
                     <div class="introduction__info">
                         <div class="introduction__wrapper">
@@ -141,7 +141,7 @@
 
     <section class="new">
         <div class="container">
-            <h3 class="new__title">What’s New?</h3>
+            <h3 class="new__title title">What’s New?</h3>
             <div class="new__inner">
                 <div class="new__item">
                     <img class="new__item-pic" src="images/1.png" alt="">
@@ -208,7 +208,16 @@
                 </div>
             </div>
 
-            <img class="dish__large" src="images/big-dish.png" alt="">
+            <div class="dish__premier-wrapper">
+                <img class="dish__premier" src="images/big-dish.png" alt="">
+                <div class="dish__order dish__order--premier is-Transformed">
+                    <h4 class="dish__order__title">Daily Catch</h4>
+                    <p class="dish__order-name">Fish Cebab with Vegetables</p>
+                    <p class="dish__order-prise">$26</p>
+                </div>
+            </div>
+
+
 
 
         </div>
@@ -220,7 +229,7 @@
 
     <section class="promise">
         <div class="container">
-            <h3 class="promise__title">Our Promise</h3>
+            <h3 class="promise__title title">Our Promise</h3>
             <div class="promise__wrapper">
                 <div class="promise__item">
                     <p class="promise__cook">Cook Good</p>
@@ -267,7 +276,7 @@
             <div class="motivation__bottom">
                 <div class="motivation__description">
                     <p class="motivation__text-desc">Feel Yourself as a Valued Guest</p>
-                    <h3 class="motivation__title">Cozy Atmospere</h3>
+                    <h3 class="motivation__title">Cozy Atmosphere</h3>
                     <p class="motivation__text">
                         Lorem ipsum dolor sit met, conteturing elit. Phasellus pellen tesque osure risus lacinia tristique usce sed massa orem ipsum dolor sit met, conteturin pellentesque osuisus lacinia tristique Fusce sed massaorem ipsum dolor
                     </p>
@@ -279,108 +288,117 @@
     </section>
 
     <section class="feedback">
-        <h3 class="feedback__title">happy guests say</h3>
+        <h3 class="feedback__title title">happy guests say</h3>
         <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus nec nunc vel hendrerit. Aenean non mi vel sem commodo vulputate. Cras vel tempus tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
             Aenean neque eros, tincidunt et lectus at, consectetur pharetra dolor. </p>
-
         <div class="feedback__avatar"></div>
         <p class="feedback__name">jason m.</p>
         <div class="feedback__slider"></div>
     </section>
 
     <section class="booking">
-        <h3 class="booking__title">book a table</h3>
-        <div class="booking__wrapper">
-            <div class="form__wrapper">
-                <form action="#" class="booking__form">
-
-                    <div>
-                        <span class="booking__input"> Hello! Tell US Your name </span> <br>
-                        <input type="text" name="Hello! Tell US Your name">
-                    </div>
-
-                    <div>
-                        <span>When?</span>
-                        <input class="form__date" type="date" name="date" placeholder="Today">
-                    </div>
-                    <div>
-                        <span>Table for</span>
-                        <input type="number" name="number" step="1" placeholder="2">
-                    </div>
-                    <div>
-                        <span>Time</span>
-                        <input type="time" name="time" placeholder="10am">
-                    </div>
-
-                    <button class="booking__btn" type="submit"> see you there!</button>
-
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="map">
-        <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464257.0172585259!2d32.96249930567934!3d49.998572758850266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d65ddb39e79a37%3A0x8c95349d74519f3c!2z0JvRg9Cx0L3Riywg0J_QvtC70YLQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDM3NTAx!5e0!3m2!1sru!2sua!4v1616349933805!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <footer class="footer">
-        <h3 class="footer__main-title">#fishhouse</h3>
-        <div class="footer__img-wrapper">
-            <img class="footer__img" src="images/footer_1.png" alt="">
-            <img class="footer__img" src="images/footer_2.png" alt="">
-            <img class="footer__img" src="images/footer_3.png" alt="">
-            <img class="footer__img" src="images/footer_4.png" alt="">
-            <img class="footer__img" src="images/footer_5.png" alt="">
-            <img class="footer__img" src="images/footer_6.png" alt="">
-        </div>
-        <div class="footer__btn-wrapper">
-            <a class="footer__btn" href="#">follow us on instagram</a>
-        </div>
         <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__info">
-                    <h2 class="footer__title">
+            <h3 class="title">book a table</h3>
+            <form action="#" class="booking__form">
+
+                <div class="input__wrapper">
+                    <label class="label__name" for="name"> Hello! Tell US Your name</label>
+                    <input class="form__name" type="text" name="name" id="name">
+                </div>
+
+
+                <div class="input__wrapper">
+                    <span>When?</span>
+                    <label class="border__input date" for="date">
+                            <input class="form__date" placeholder="Today" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                        </label>
+                </div>
+
+
+                <div class="input__wrapper">
+                    <span>Table for</span>
+                    <label class="border__input number" for="number">
+                            <input class="form__number" type="number" name="number " step="1" placeholder="2" id="number">
+                        </label>
+                </div>
+
+
+                <div class="input__wrapper">
+                    <span> Time</span>
+                    <label class="border__input" for="time">
+                            <input class="form__time" type="time" name="time" id="time" placeholder="10am" required>
+                        </label>
+                </div>
+                <div class="btn__wrapper">
+                    <button class="booking__btn " type="submit "> see you there!</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="map ">
+        <iframe class="map__frame " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464257.0172585259!2d32.96249930567934!3d49.998572758850266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d65ddb39e79a37%3A0x8c95349d74519f3c!2z0JvRg9Cx0L3Riywg0J_QvtC70YLQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDM3NTAx!5e0!3m2!1sru!2sua!4v1616349933805!5m2!1sru!2sua "
+            style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+    </section>
+
+    <footer class="footer ">
+        <h3 class="footer__main-title ">#fishhouse</h3>
+        <div class="footer__img-wrapper ">
+            <img class="footer__img" src="images/footer_1.png " alt="pasta">
+            <img class="footer__img" src="images/footer_2.png " alt="rise with fish">
+            <img class="footer__img" src="images/footer_3.png " alt="photo">
+            <img class="footer__img" src="images/footer_4.png " alt="whine">
+            <img class="footer__img" src="images/footer_5.png " alt="green salat">
+            <img class="footer__img" src="images/footer_6.png " alt="foamy beer">
+        </div>
+        <div class="footer__btn-wrapper ">
+            <a class="footer__btn " href="# ">follow us on instagram</a>
+        </div>
+        <div class="container ">
+            <div class="footer__wrapper ">
+                <div class="footer__info ">
+                    <h2 class="footer__title ">
                         few more words
                     </h2>
-                    <p class="footer__text">Lorem ipsum dolor sit met, conteturing elit. Phasellus pellen tesque osure risus lacinia tristique usce sed massa orem ipsum dolor sit met conteturin pellen tesque osuisus lacinia tristique </p>
+                    <p class="footer__text ">Lorem ipsum dolor sit met, conteturing elit. Phasellus pellen tesque osure risus lacinia tristique usce sed massa orem ipsum dolor sit met conteturin pellen tesque osuisus lacinia tristique </p>
                 </div>
 
-                <div class="footer__quick-links">
-                    <h3 class="footer__title">quick links</h3>
-                    <ul class="footer__nav">
-                        <li class="footer__nav-list"><a href="#">Menu</a></li>
-                        <li class="footer__nav-list"><a href="#">Book a Table</a></li>
-                        <li class="footer__nav-list"><a href="#">Events</a></li>
-                        <li class="footer__nav-list"><a href="#">Contact Us</a></li>
+                <div class="footer__quick-links ">
+                    <h3 class="footer__title ">quick links</h3>
+                    <ul class="footer__nav ">
+                        <li class="footer__nav-list "><a href="# ">Menu</a></li>
+                        <li class="footer__nav-list "><a href="# ">Book a Table</a></li>
+                        <li class="footer__nav-list "><a href="# ">Events</a></li>
+                        <li class="footer__nav-list "><a href="# ">Contact Us</a></li>
                 </div>
 
-                <form class="footer__form" action="" method="post">
-                    <span>Srat in touch</span>
-                    <input class="footer__inp" type="email" name="email">
-                    <span class="footer__form-text">Only monthly news, we promise!</span>
+                <form class="footer__form " action=" " method="post ">
+                    <span>Stay in touch</span>
+                    <input class="footer__inp " type="email " name="email ">
+                    <span class="footer__form-text ">Only monthly news, we promise!</span>
                 </form>
             </div>
 
-            <div class="footer__social-wrapper">
-                <a href="#">
-                    <div class="footer__logo"></div>
+            <div class="footer__social-wrapper ">
+                <a href="# ">
+                    <div class="footer__logo "></div>
                 </a>
-                <a href="#">
-                    <div class="footer__tw"></div>
+                <a href="# ">
+                    <div class="footer__tw "></div>
                 </a>
-                <a href="#">
-                    <div class="footer__fb"></div>
+                <a href="# ">
+                    <div class="footer__fb "></div>
                 </a>
-                <a href="#">
-                    <div class="footer__inst"></div>
+                <a href="# ">
+                    <div class="footer__inst "></div>
                 </a>
             </div>
             <span class="footer__copyright">Ardoredex © 2016 All Rights Reserved Terms of Use and Privacy Policy</span>
         </div>
 
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
