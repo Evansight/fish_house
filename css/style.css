@@ -76,6 +76,24 @@ form input {
     transform: translateY(-50%);
 }
 
+.number::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/icons/amount.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 19px;
+    min-height: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+b {
+    color: #1f1f1f;
+}
+
 
 /* header */
 
@@ -161,8 +179,10 @@ form input {
 }
 
 .header__logo-motto {
+    display: block;
     color: #393b3d;
     font-size: 10px;
+    padding-top: 3px;
 }
 
 .header__nav-list {
@@ -250,7 +270,6 @@ form input {
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: .3em;
-    font-size: 36px;
 }
 
 .introduction__info {
@@ -326,7 +345,7 @@ form input {
 }
 
 .is-Transformed {
-    width: 50%;
+    /* width: 50%; */
     margin: auto;
     position: absolute;
     top: 50%;
@@ -611,6 +630,7 @@ form input {
 
 .feedback {
     text-align: center;
+    margin-bottom: 7em;
 }
 
 .feedback__title {
@@ -689,6 +709,7 @@ form input {
 
 .input__wrapper span,
 .label__name {
+    text-transform: uppercase;
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
@@ -777,15 +798,19 @@ form input {
 }
 
 .footer__info {
-    max-width: 260px;
+    width: 260px;
+    max-width: 100%;
 }
 
 .footer__quick-links {
-    max-width: 160px;
+    width: 160px;
+    max-width: 100%;
+    margin-left: 3.8em;
 }
 
 .footer__form {
-    max-width: 277px;
+    width: 277px;
+    max-width: 100%;
 }
 
 .footer__title {
@@ -813,12 +838,14 @@ form input {
     width: 100%;
     height: 52px;
     border: none;
+    margin: 4em 0 1.5em 0;
 }
 
 .footer__logo {
     background-image: url(../images/footer__logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     width: 159px;
     height: 30px;
     margin-right: 22px;

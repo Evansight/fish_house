@@ -38,7 +38,7 @@
                                 <a class="header__nav-link" href="#"> <span>OUR</span> MENU</a>
                             </li>
                             <li class="header__nav-list-item">
-                                <a class="header__nav-link" href="#">LOCATION</a>
+                                <a class="header__nav-link" href="#location">LOCATION</a>
                             </li>
                             <li class="header__nav-list-item">
                                 <a class="header__nav-link" href="#">FEATURES</a>
@@ -94,23 +94,23 @@
                         </div>
                         <div class="intro__inf-wrapper">
 
-                            <div class="introduction__contact-item">
+                            <div class="contact__item">
                                 <p class="introduction__contact">phone</p>
                                 <a class="introduction__contact-number" href="tel:8001231234">800-123-1234</a>
                             </div>
 
 
-                            <div class="introduction__contact-item">
+                            <div class="contact__item">
                                 <p class="introduction__contact">location</p>
                                 <p class="introduction__contact-address">234 Thirty Five Ave.</p>
                                 <p class="introduction__contact-address"> Portland, OR 23567</p>
                             </div>
-                            <div class="introduction__main-hours">
+                            <div class="contact__item">
                                 <p class="introduction__contact">hours</p>
 
-                                <p class="introduction__main-text">M-F 11am-2am</p>
-                                <p class="introduction__main-text">Sa 10am-3am</p>
-                                <p class="introduction__main-text">Su 10am-2am</p>
+                                <p class="introduction__main-text"> <b>M-F</b> 11am-2am</p>
+                                <p class="introduction__main-text"> <b>Sa</b> 10am-3am</p>
+                                <p class="introduction__main-text"> <b>Su</b> 10am-2am</p>
                             </div>
                         </div>
 
@@ -288,12 +288,14 @@
     </section>
 
     <section class="feedback">
-        <h3 class="feedback__title title">happy guests say</h3>
-        <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus nec nunc vel hendrerit. Aenean non mi vel sem commodo vulputate. Cras vel tempus tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Aenean neque eros, tincidunt et lectus at, consectetur pharetra dolor. </p>
-        <div class="feedback__avatar"></div>
-        <p class="feedback__name">jason m.</p>
-        <div class="feedback__slider"></div>
+        <div class="container">
+            <h3 class="feedback__title title">happy guests say</h3>
+            <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus nec nunc vel hendrerit. Aenean non mi vel sem commodo vulputate. Cras vel tempus tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Aenean neque eros, tincidunt et lectus at, consectetur pharetra dolor. </p>
+            <div class="feedback__avatar"></div>
+            <p class="feedback__name">jason m.</p>
+            <div class="feedback__slider"></div>
+        </div>
     </section>
 
     <section class="booking">
@@ -337,7 +339,7 @@
         </div>
     </section>
 
-    <section class="map ">
+    <section class="map" id="location">
         <iframe class="map__frame " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464257.0172585259!2d32.96249930567934!3d49.998572758850266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d65ddb39e79a37%3A0x8c95349d74519f3c!2z0JvRg9Cx0L3Riywg0J_QvtC70YLQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDM3NTAx!5e0!3m2!1sru!2sua!4v1616349933805!5m2!1sru!2sua "
             style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
     </section>
@@ -374,7 +376,7 @@
                 </div>
 
                 <form class="footer__form " action=" " method="post ">
-                    <span>Stay in touch</span>
+                    <span class="footer__title ">Stay in touch</span>
                     <input class="footer__inp " type="email " name="email ">
                     <span class="footer__form-text ">Only monthly news, we promise!</span>
                 </form>
